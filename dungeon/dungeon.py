@@ -56,7 +56,7 @@ if __name__ == "__main__":
         def in_range(x, lim) -> bool:
             return (x >= 0 and x < lim)
         
-        def passable(x,y,z):
+        def passable(x, y, z) -> bool:
             if in_range(x,L) and in_range(y,R) and in_range(z,C):
                 return cave[x][y][z] != '#'
 
